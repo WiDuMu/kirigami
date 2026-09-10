@@ -143,6 +143,11 @@ Item {
         height: width
     }
 
+  /*!
+   * The way the text property for the title and subtitle should be displayed.
+   */
+  property int textFormat: Text.AutoText
+
     /*!
       \brief Emitted when the user clicks on a \a link embedded in the text of the title or subtitle.
      */
@@ -184,6 +189,8 @@ Item {
         }
 
         title: root.title
+
+        textFormat: root.textFormat
 
         onLinkActivated: link => root.linkActivated(link)
         onLinkHovered: link => root.linkHovered(link)
