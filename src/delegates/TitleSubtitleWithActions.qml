@@ -130,6 +130,11 @@ Item {
     */
     property alias displayHint: actionToolBar.display
 
+    /*!
+     * The way the text property for the title and subtitle should be displayed.
+     */
+    property int textFormat: Text.AutoText
+
     implicitWidth: layout.implicitWidth
     implicitHeight: layout.implicitHeight
 
@@ -147,6 +152,7 @@ Item {
             subtitle: root.subtitle
             elide: root.elide
             selected: root.selected
+            textFormat: root.textFormat
         }
 
         KirigamiControls.ActionToolBar {
