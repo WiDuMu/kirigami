@@ -96,6 +96,10 @@ target_sources(KirigamiControls PRIVATE
     enums.h
     pagepool.cpp
     pagepool.h
+    pagerowstackhelper.cpp
+    pagerowstackhelper.h
+    pagepoolactionhelper.cpp
+    pagepoolactionhelper.h
 )
 
 target_sources(KirigamiControlsplugin PRIVATE
@@ -123,4 +127,3 @@ target_include_directories(KirigamiControls PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/
 ecm_finalize_qml_module(KirigamiControls EXPORT KirigamiTargets)
 
 install(TARGETS KirigamiControls EXPORT KirigamiTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
-
